@@ -29,6 +29,7 @@
                         <span class="label-text">Mobile Number</span>
                       </label>
                       <input
+                        id="phone-number"
                         type="number"
                         placeholder="Enter your number"
                         class="input input-bordered"
@@ -40,8 +41,10 @@
                         <span class="label-text">4 Digit Pin</span>
                       </label>
                       <input
+                        id="pin-number"
                         type="password"
                         placeholder="Enter 4 Digit Pin"
+                        autocomplete="off"
                         class="input input-bordered"
                         required
                       />
@@ -52,7 +55,7 @@
                       </label>
                     </div>
                     <div class="form-control mt-6">
-                      <button class="btn btn-primary">Login</button>
+                      <button id="btn-login" class="btn bg-lime-500 text-black">Login</button>
                     </div>
                   </form>
                 </div>
@@ -62,5 +65,7 @@
         </div>
       </div>
     </main>
+
+    <script src="js/login.js"></script>
   </body>
 </html>
