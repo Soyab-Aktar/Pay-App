@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!--? balance -->
+            <div class="stats shadow">
+              <div class="stat">
+                <div id="balance-atm" class="stat-value">8400</div>
+                <div class="stat-desc">Available Balance</div>
+              </div>
+            </div>
+
+            <!--? divider -->
+            <div class="divider"></div>
+
+            <!--? User Action Button -->
+
+            <div>
+              <button id="addM" class="btn">Add Money</button>
+              <button id="outM" class="btn">Cash out</button>
+            </div>
+            <div class="divider"></div>
+            <!--^ Add money Start -->
+            <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Add Amount</span>
+                  </label>
+                  <input
+                    id="input-addMoney"
+                    type="number"
+                    placeholder="Amount"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text"> Put Pin Number</span>
+                  </label>
+                  <input
+                  id="input-pin"
+                    autocomplete="off"
+                    type="password"
+                    placeholder="Pin"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-money" class="btn bg-lime-500 text-black">
+                    Add Money
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!--^ Add money End -->
+
+            <!--^ Cash out start -->
+            <div id="cash-out-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Enter Amount</span>
+                    </label>
+                    <input
+                      id="input-cashout"
+                      type="number"
+                      placeholder="Amount"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text"> Put Pin Number</span>
+                    </label>
+                    <input
+                    id="input-cashoutpin"
+                      autocomplete="off"
+                      type="password"
+                      placeholder="Pin"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-cashout" class="btn bg-lime-500 text-black">
+                      Cash out
+                    </button>
+                  </div>
+                </form>
+              </div>
+            <!--^ Cash out end -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/home.js"></script>
+    <script src="js/cash.js"></script>
+    <script src="js/btn.js"></script>
+  </body>
+</html>
